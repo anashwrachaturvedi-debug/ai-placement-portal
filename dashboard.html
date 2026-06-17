@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Tells browser this is an HTML5 document -->
+
+<html>
+
+<head>
+
+    <!-- Browser tab title -->
+    <title>Dashboard - PlacementPrep AI</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="styleLogin.css">
+   
+</head>
+
+<body>
+    <h1 id="welcome"></h1>
+    <div class="profile-card">
+    <h2 id="welcome"></h2>
+    <p>📧 <span id="userEmail"></span></p>
+</div>
+<input id="arrays">
+<input id="strings">
+<input id="dp">
+<div class="stats-container">
+
+    <div class="stat-card">
+        <h2 id="totalQuestions">0</h2>
+        <p>Questions Solved</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="currentStreak">15</h2>
+        <p>Current Streak</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="readiness">0%</h2>
+        <p>Placement Readiness</p>
+    </div>
+
+</div>
+    <div class="feature-card"
+onclick="location.href='dashboard.html'">
+<h3>Progress: <span id="percentage"></span></h3>
+<div class="dashboard-container">
+
+    <h1>📊 DSA Progress Dashboard</h1>
+
+    <p>Track your solved LeetCode questions.</p>
+
+    <div class="tracker-grid">
+
+        <div class="input-box">
+            <label>Arrays Solved</label>
+            <input type="number" placeholder="Enter count">
+        </div>
+
+        <div class="input-box">
+            <label>Strings Solved</label>
+            <input type="number" placeholder="Enter count">
+        </div>
+
+        <div class="input-box">
+            <label>Dynamic Programming Solved</label>
+            <input type="number" placeholder="Enter count">
+        </div>
+        
+    </div>
+
+  <button type="button" onclick="saveProgress()">
+    Save Progress
+</button>
+<progress
+id="progressBar"
+max="300"
+value="0">
+</progress>
+
+</div>
+<form onsubmit ="saveProgress(event)"></form>
+</body>
+
+</html>
