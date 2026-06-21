@@ -516,3 +516,64 @@ function saveProgress(){
 
     alert("Progress Saved Successfully!");
 }
+function analyzeResume(){
+
+    alert(
+        "Resume Score: 82/100\n\nSuggestions:\n• Add more projects\n• Mention technologies used\n• Quantify achievements"
+    );
+}
+alert("Starting Technical Interview...");
+function addApplication(){
+
+    let company =
+    document.getElementById("company").value;
+
+    let status =
+    document.getElementById("status").value;
+
+    let card = document.createElement("div");
+
+    card.className = "application-card";
+
+    card.innerHTML = `
+        <h3>${company}</h3>
+        <p>${status}</p>
+    `;
+
+    document
+    .getElementById("applicationsList")
+    .appendChild(card);
+}
+localStorage.setItem(
+    "applications",
+    JSON.stringify(data)
+);
+const ctx =
+document.getElementById("dsaChart");
+
+new Chart(ctx,{
+
+    type:"bar",
+
+    data:{
+
+        labels:[
+            "Arrays",
+            "Strings",
+            "DP"
+        ],
+
+        datasets:[{
+
+            label:"Questions Solved",
+
+            data:[
+                50,
+                40,
+                30
+            ]
+
+        }]
+    }
+
+});

@@ -67,6 +67,11 @@ onclick="location.href='dashboard.html'">
         </div>
         
     </div>
+    <div class="chart-container">
+
+    <canvas id="dsaChart"></canvas>
+
+</div>
 
   <button type="button" onclick="saveProgress()">
     Save Progress
@@ -79,6 +84,8 @@ value="0">
 
 </div>
 <form onsubmit ="saveProgress(event)"></form>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dashboard.js"></script>
 </body>
 
 </html>

@@ -15,13 +15,16 @@
 Logout
 </button>
         <!-- Navigation Links -->
-       <nav>
-    <ul>
-        <li><a href="index.html">🏠 Home</a></li>
-        <li><a href="login.html">🔐 Login</a></li>
-        <li><a href="register.html">📝 Register</a></li>
-        <li><a href="dashboard.html">📊 Dashboard</a></li>
-    </ul>
+ <nav class="navbar">
+    <div class="logo">🚀 PlacementPrep AI</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="resume.html">Resume</a>
+        <a href="mockInterview.html">Interview</a>
+        <a href="applications.html">Applications</a>
+    </div>
 </nav>
     <!-- Hero Section -->
     <section class="hero">
@@ -62,41 +65,101 @@ Logout
     </div>
 
 </section>
+<section class="roadmap">
+
+    <h2>Your Placement Journey</h2>
+
+    <div class="roadmap-container">
+
+        <div class="roadmap-step">
+            <h3>1️⃣ Learn DSA</h3>
+            <p>Master Arrays, Strings, Linked Lists, Trees.</p>
+        </div>
+
+        <div class="roadmap-step">
+            <h3>2️⃣ Build Projects</h3>
+            <p>Create real-world web development projects.</p>
+        </div>
+
+        <div class="roadmap-step">
+            <h3>3️⃣ Improve Resume</h3>
+            <p>Optimize your resume for recruiters.</p>
+        </div>
+
+        <div class="roadmap-step">
+            <h3>4️⃣ Mock Interviews</h3>
+            <p>Practice technical and HR interviews.</p>
+        </div>
+
+        <div class="roadmap-step">
+            <h3>5️⃣ Get Placed</h3>
+            <p>Crack your dream company.</p>
+        </div>
+
+    </div>
+
+</section>
     <!-- Features Section -->
     <section class="features">
 
-    <div class="feature-card">
+    <div class="feature-card"
+     onclick="location.href='dashboard.html'">
 
-        <h3>📚 DSA Tracker</h3>
+    <h3>📚 DSA Tracker</h3>
 
-        <p>
-            Track solved questions topic-wise
-            and monitor your progress.
-        </p>
+    <p>Track your DSA progress</p>
 
-    </div>
+</div>
 
-    <div class="feature-card">
+   <div class="feature-card"
+     onclick="location.href='resume.html'">
 
-        <h3>📄 Resume Analyzer</h3>
+    <h3>📄 Resume Analyzer</h3>
 
-        <p>
-            Get AI-powered suggestions to
-            improve your resume.
-        </p>
+    <p>Analyze your resume</p>
 
-    </div>
+</div>
 
-    <div class="feature-card">
+  <div class="feature-card"
+     onclick="location.href='mockInterview.html'">
 
-        <h3>🎤 Mock Interviews</h3>
+    <h3>🎤 Mock Interview</h3>
 
-        <p>
-            Practice technical and HR interviews
-            with confidence.
-        </p>
+    <p>Practice interviews</p>
 
-    </div>
+</div>
+
+<div class="feature-card"
+     onclick="location.href='applications.html'">
+
+    <h3>💼 Application Tracker</h3>
+
+    <p>Track your applications</p>
+
+</div>
+</section>
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+    <h3>How many DSA questions should I solve?</h3>
+    <p>150-200 quality questions are enough.</p>
+</div>
+
+<div class="faq-item">
+    <h3>When should I start applying?</h3>
+    <p>After building projects and strong DSA fundamentals.</p>
+</div>
+
+</section>
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: placementprep@gmail.com</p>
+
+<p>LinkedIn: PlacementPrep AI</p>
 
 </section>
 <footer>
@@ -113,6 +176,17 @@ Logout
         Built using HTML CSS JS
     </p>
     
+</footer>
+<!-- -->
+<div class="feature-card" onclick="location.href='resume.html'"></div>
+<footer>
+
+    <h3>PlacementPrep AI</h3>
+
+    <p>
+        Helping students prepare for placements.
+    </p>
+
 </footer>
 </body>
 </html>

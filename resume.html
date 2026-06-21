@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume Analyzer</title>
+
+    <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
-    <div class="resume-container">
 
-    <h1>Resume Analyzer</h1>
+<nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+</nav>
 
-    <input type="file">
+<div class="resume-container">
+
+    <h1>📄 Resume Analyzer</h1>
+
+    <input type="file" id="resumeFile">
 
     <button>Analyze Resume</button>
-        <input type="file" id="resume">
+
+    <div class="result-card">
+        <h2>Resume Score: 85%</h2>
+    </div>
+
+    <div class="suggestions-card">
+        <h2>Suggestions</h2>
+
+        <ul>
+            <li>Add more projects</li>
+            <li>Improve skills section</li>
+            <li>Add certifications</li>
+        </ul>
+
+    </div>
+
 </div>
+
 </body>
 </html>
