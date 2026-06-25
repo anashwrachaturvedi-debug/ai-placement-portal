@@ -3,28 +3,28 @@
 =========================== */
 
 body {
-
     margin: 0;
-
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: Arial, sans-serif;
 
-background:
-linear-gradient(
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.35)
-),
-url("FAANG.webp");
+    overflow-x: hidden;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("FAANG.webp");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 /* ===========================
    LOGIN / REGISTER CARD
 =========================== */
@@ -167,6 +167,30 @@ align-items:center;
         font-size:40px;
     }
 }
+.hero{
+    animation: fadeUp 1.2s ease;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+
+    padding: 40px;
+    border-radius: 20px;
+
+    width: 70%;
+    margin: auto;
+
+    text-align: center;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 .hero h1{
 
     color:white;
@@ -202,44 +226,24 @@ align-items:center;
 }
 
 .hero{
-    animation:fadeUp 1.2s ease;
-    background:rgba(0,0,0,0.35);
+   animation:fadeUp 1.2s ease;
+   background:rgba(0,0,0,0.35);
+   backdrop-filter:blur(10px);
+   padding:40px;
+   border-radius:20px;
+   width:70%;
+   margin:auto;
+   text-align:center;
+}
 
-    backdrop-filter:blur(10px);
-     animation:
-    fadeIn 1.5s ease;
-
-    padding:40px;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    
-    flex-direction: column;
-    border-radius:20px;
-
-    width:70%;
-
-    margin:auto;
-    
-    text-align:center;
-    @keyframes fadeIn{
-
+@keyframes fadeIn{
     from{
-
         opacity:0;
-
-        transform:
-        translateY(50px);
+        transform:translateY(50px);
     }
-
     to{
-
         opacity:1;
-
-        transform:
-        translateY(0);
-        max-width:900px;
-        margin:40px auto;
+        transform:translateY(0);
     }
 }
 .hero button{
@@ -272,10 +276,10 @@ align-items:center;
 .hero-content{
     padding:50px;
 }
-}
+
 /*nav */
 /* Navigation Box */
-.navbar{
+.custom-navbar{
     width:90%;
     margin:20px auto;
     padding:18px 35px;
@@ -893,9 +897,6 @@ button:hover{
     transform: none !important;
 }
 
-body{
-    overflow-x:hidden !important;
-}
 .glass-card{
     width: 90%;
     max-width: 600px;
@@ -930,7 +931,7 @@ body{
     gap: 25px;
 }
 
-.card{
+.custom-card{
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(12px);
 

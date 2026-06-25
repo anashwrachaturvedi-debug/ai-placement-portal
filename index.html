@@ -4,27 +4,63 @@
     <!-- Text displayed on browser tab -->
     <title>PlacementPrep AI</title>
     <!-- Connecting CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styleLogin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <!-- Website Logo/Name -->
-       <button onclick="logout()">
-Logout
-</button>
-        <!-- Navigation Links -->
- <nav class="navbar">
-    <div class="logo">🚀 PlacementPrep AI</div>
+    <nav class="navbar navbar-expand-lg custom-navbar mt-3">
+  <div class="container">
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="resume.html">Resume</a>
-        <a href="mockInterview.html">Interview</a>
-        <a href="applications.html">Applications</a>
+    <a class="navbar-brand text-white fw-bold" href="#">
+      🚀 PlacementPrep AI
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="resume.html">Resume</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="mockInterview.html">Interview</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="applications.html">Applications</a>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn btn-danger ms-2" onclick="logout()">
+            Logout
+          </button>
+        </li>
+
+      </ul>
+
     </div>
+
+  </div>
 </nav>
     <!-- Hero Section -->
     <section class="hero">
@@ -45,98 +81,133 @@ Logout
         </a>
     </section>
     <section class="stats">
-    <div class="stat-card">
-     <h2 id="studentsPlaced">0</h2>
-     <p>Students Placed</p>
-    </div>
-    <div class="stat-box">
-        <h2 id="students">0</h2>
-        <p>Students Placed</p>
-    </div>
+   <div class="container">
+    <div class="row g-4">
 
-    <div class="stat-box">
-        <h2 id="questions">0</h2>
-        <p>DSA Questions Tracked</p>
-    </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2>0</h2>
+                <p>Students Placed</p>
+            </div>
+        </div>
 
-    <div class="stat-box">
-        <h2 id="interviews">0</h2>
-        <p>Mock Interviews</p>
-    </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2>0</h2>
+                <p>Students Placed</p>
+            </div>
+        </div>
 
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2>0</h2>
+                <p>DSA Questions Tracked</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <h2>0</h2>
+                <p>Mock Interviews</p>
+            </div>
+        </div>
+
+    </div>
+</div>
 </section>
-<section class="roadmap">
+<section class="roadmap container mt-5">
 
-    <h2>Your Placement Journey</h2>
+    <h2 class="text-center text-white mb-4">
+        Your Placement Journey
+    </h2>
 
-    <div class="roadmap-container">
+    <div class="row g-4">
 
-        <div class="roadmap-step">
-            <h3>1️⃣ Learn DSA</h3>
-            <p>Master Arrays, Strings, Linked Lists, Trees.</p>
+        <div class="col-md col-sm-6">
+            <div class="roadmap-step h-100">
+                <h3>1️⃣ Learn DSA</h3>
+                <p>Master Arrays, Strings, Linked Lists, Trees.</p>
+            </div>
         </div>
 
-        <div class="roadmap-step">
-            <h3>2️⃣ Build Projects</h3>
-            <p>Create real-world web development projects.</p>
+        <div class="col-md col-sm-6">
+            <div class="roadmap-step h-100">
+                <h3>2️⃣ Build Projects</h3>
+                <p>Create real-world web development projects.</p>
+            </div>
         </div>
 
-        <div class="roadmap-step">
-            <h3>3️⃣ Improve Resume</h3>
-            <p>Optimize your resume for recruiters.</p>
+        <div class="col-md col-sm-6">
+            <div class="roadmap-step h-100">
+                <h3>3️⃣ Improve Resume</h3>
+                <p>Optimize your resume for recruiters.</p>
+            </div>
         </div>
 
-        <div class="roadmap-step">
-            <h3>4️⃣ Mock Interviews</h3>
-            <p>Practice technical and HR interviews.</p>
+        <div class="col-md col-sm-6">
+            <div class="roadmap-step h-100">
+                <h3>4️⃣ Mock Interviews</h3>
+                <p>Practice technical and HR interviews.</p>
+            </div>
         </div>
 
-        <div class="roadmap-step">
-            <h3>5️⃣ Get Placed</h3>
-            <p>Crack your dream company.</p>
+        <div class="col-md col-sm-6">
+            <div class="roadmap-step h-100">
+                <h3>5️⃣ Get Placed</h3>
+                <p>Crack your dream company.</p>
+            </div>
         </div>
 
     </div>
 
 </section>
     <!-- Features Section -->
-    <section class="features">
+    <section class="container mt-5">
 
-    <div class="feature-card"
-     onclick="location.href='dashboard.html'">
+    <div class="row g-4">
 
-    <h3>📚 DSA Tracker</h3>
+        <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100"
+                 onclick="location.href='dashboard.html'">
 
-    <p>Track your DSA progress</p>
+                <h3>📚 DSA Tracker</h3>
+                <p>Track your DSA progress</p>
 
-</div>
+            </div>
+        </div>
 
-   <div class="feature-card"
-     onclick="location.href='resume.html'">
+        <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100"
+                 onclick="location.href='resume.html'">
 
-    <h3>📄 Resume Analyzer</h3>
+                <h3>📄 Resume Analyzer</h3>
+                <p>Analyze your resume</p>
 
-    <p>Analyze your resume</p>
+            </div>
+        </div>
 
-</div>
+        <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100"
+                 onclick="location.href='mockInterview.html'">
 
-  <div class="feature-card"
-     onclick="location.href='mockInterview.html'">
+                <h3>🎤 Mock Interview</h3>
+                <p>Practice interviews</p>
 
-    <h3>🎤 Mock Interview</h3>
+            </div>
+        </div>
 
-    <p>Practice interviews</p>
+        <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100"
+                 onclick="location.href='applications.html'">
 
-</div>
+                <h3>💼 Application Tracker</h3>
+                <p>Track your applications</p>
 
-<div class="feature-card"
-     onclick="location.href='applications.html'">
+            </div>
+        </div>
+        <div class="feature-card" onclick="location.href='resume.html'"></div>
+    </div>
 
-    <h3>💼 Application Tracker</h3>
-
-    <p>Track your applications</p>
-
-</div>
 </section>
 <section class="faq">
 
@@ -162,31 +233,18 @@ Logout
 <p>LinkedIn: PlacementPrep AI</p>
 
 </section>
-<footer>
+<footer class="text-center text-white mt-5 mb-3">
 
     <h3>PlacementPrep AI</h3>
 
-    <p>Made for Placement Preparation</p>
-
-</footer>
-<footer>
+    <p>Helping students prepare for placements.</p>
 
     <p>
         © 2026 PlacementPrep AI |
         Built using HTML CSS JS
     </p>
-    
-</footer>
-<!-- -->
-<div class="feature-card" onclick="location.href='resume.html'"></div>
-<footer>
-
-    <h3>PlacementPrep AI</h3>
-
-    <p>
-        Helping students prepare for placements.
-    </p>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
