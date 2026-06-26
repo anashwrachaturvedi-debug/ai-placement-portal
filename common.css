@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:
+        linear-gradient(rgba(10,10,25,0.75), rgba(10,10,25,0.75)),
+        url("FAANG.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================
+   NAVBAR - ALL SCREENS
+========================= */
+.custom-navbar {
+    width: 90%;
+    margin: 20px auto;
+    background: rgba(20,20,35,0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.4rem;
+    color: white !important;
+    font-weight: 700;
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* Hamburger icon visible on dark bg */
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Collapsed menu on mobile */
+@media (max-width: 991px) {
+    .custom-navbar {
+        width: 95%;
+        border-radius: 15px;
+        background: rgba(20,20,35,0.95) !important;
+    }
+
+    .navbar-collapse {
+        background: rgba(20,20,35,0.95);
+        border-radius: 12px;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .btn {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0 !important;
+    }
+}
+
+/* =========================
+   TABLET (768px)
+========================= */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .hero-title {
+        font-size: 2.8rem !important;
+    }
+
+    .hero-sub {
+        font-size: 1rem !important;
+    }
+
+    .stat-card h2 {
+        font-size: 2rem;
+    }
+
+    .feature-card,
+    .roadmap-step,
+    .stat-card {
+        margin-bottom: 10px;
+    }
+}
+
+/* =========================
+   MOBILE (480px)
+========================= */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem !important;
+    }
+
+    .hero-sub {
+        font-size: 0.95rem !important;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .custom-navbar {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .login-container,
+    .register-container {
+        padding: 28px 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 1.6rem;
+    }
+}

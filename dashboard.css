@@ -1,0 +1,87 @@
+/* =========================
+   DASHBOARD HERO / WELCOME
+========================= */
+.dash-hero .glass-card {
+    animation: slideUp 0.8s ease forwards;
+}
+
+/* =========================
+   STAT CARDS — icon variant
+========================= */
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stat-card h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.70);
+    margin-bottom: 0;
+}
+
+/* =========================
+   DSA INPUTS
+========================= */
+.dsa-input {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.20) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 10px 14px;
+}
+
+.dsa-input::placeholder {
+    color: rgba(255,255,255,0.35);
+}
+
+.dsa-input:focus {
+    background: rgba(255,255,255,0.14) !important;
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.25) !important;
+    color: white !important;
+}
+
+/* =========================
+   PROGRESS BAR TRACK
+========================= */
+.progress {
+    background: rgba(255,255,255,0.12);
+}
+
+/* =========================
+   ACTIVE NAV LINK
+========================= */
+.active-link {
+    color: #0d6efd !important;
+    font-weight: 700 !important;
+}
+
+/* =========================
+   CHART CANVAS
+========================= */
+#dsaChart {
+    filter: drop-shadow(0 4px 15px rgba(13,110,253,0.3));
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+     body{
+    background-attachment : scroll;
+    }
+    .stat-card h2 {
+        font-size: 2rem;
+    }
+}

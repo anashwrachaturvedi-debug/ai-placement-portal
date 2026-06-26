@@ -1,250 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Text displayed on browser tab -->
-    <title>PlacementPrep AI</title>
-    <!-- Connecting CSS file -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleLogin.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacementPrep AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
+ 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg custom-navbar mt-3">
-  <div class="container">
-
-    <a class="navbar-brand text-white fw-bold" href="#">
-      🚀 PlacementPrep AI
-    </a>
-
-    <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
-
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-
-      <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="resume.html">Resume</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="mockInterview.html">Interview</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="applications.html">Applications</a>
-        </li>
-
-        <li class="nav-item">
-          <button class="btn btn-danger ms-2" onclick="logout()">
-            Logout
-          </button>
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-</nav>
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">🚀 PlacementPrep AI</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mockInterview.html">Interview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="applications.html">Applications</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger ms-2" onclick="logout()">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
     <!-- Hero Section -->
     <section class="hero">
-        <!-- Main Heading --> 
-        <h1>
-            Crack Placements Smarter 🚀
-        </h1>
-        <!-- Description -->
-        <p>
-            Track DSA Progress, Analyze Resume,
-            Practice Interviews with AI.
-        </p>
-        <!-- Button --> 
-        <a href="register.html">
-            <button>
-                Get Started
-            </button>
-        </a>
+        <div class="hero-content text-center">
+            <h1 class="hero-title">Crack Placements Smarter 🚀</h1>
+            <p class="hero-sub mt-3">Track DSA Progress, Analyze Resume, Practice Interviews with AI.</p>
+            <a href="register.html" class="btn btn-primary btn-lg mt-4 hero-btn">Get Started</a>
+        </div>
     </section>
-    <section class="stats">
-   <div class="container">
-    <div class="row g-4">
-
-        <div class="col-md-3">
-            <div class="stat-card">
-                <h2>0</h2>
-                <p>Students Placed</p>
+ 
+    <!-- Stats Section -->
+    <section class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>500+</h2>
+                    <p>Students Placed</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>1200+</h2>
+                    <p>Resumes Analyzed</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>8000+</h2>
+                    <p>DSA Questions Tracked</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <h2>3000+</h2>
+                    <p>Mock Interviews Done</p>
+                </div>
             </div>
         </div>
-
-        <div class="col-md-3">
-            <div class="stat-card">
-                <h2>0</h2>
-                <p>Students Placed</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="stat-card">
-                <h2>0</h2>
-                <p>DSA Questions Tracked</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="stat-card">
-                <h2>0</h2>
-                <p>Mock Interviews</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-</section>
-<section class="roadmap container mt-5">
-
-    <h2 class="text-center text-white mb-4">
-        Your Placement Journey
-    </h2>
-
-    <div class="row g-4">
-
-        <div class="col-md col-sm-6">
-            <div class="roadmap-step h-100">
-                <h3>1️⃣ Learn DSA</h3>
-                <p>Master Arrays, Strings, Linked Lists, Trees.</p>
-            </div>
-        </div>
-
-        <div class="col-md col-sm-6">
-            <div class="roadmap-step h-100">
-                <h3>2️⃣ Build Projects</h3>
-                <p>Create real-world web development projects.</p>
-            </div>
-        </div>
-
-        <div class="col-md col-sm-6">
-            <div class="roadmap-step h-100">
-                <h3>3️⃣ Improve Resume</h3>
-                <p>Optimize your resume for recruiters.</p>
-            </div>
-        </div>
-
-        <div class="col-md col-sm-6">
-            <div class="roadmap-step h-100">
-                <h3>4️⃣ Mock Interviews</h3>
-                <p>Practice technical and HR interviews.</p>
-            </div>
-        </div>
-
-        <div class="col-md col-sm-6">
-            <div class="roadmap-step h-100">
-                <h3>5️⃣ Get Placed</h3>
-                <p>Crack your dream company.</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+    </section>
+ 
     <!-- Features Section -->
     <section class="container mt-5">
-
-    <div class="row g-4">
-
-        <div class="col-lg-3 col-md-6">
-            <div class="feature-card h-100"
-                 onclick="location.href='dashboard.html'">
-
-                <h3>📚 DSA Tracker</h3>
-                <p>Track your DSA progress</p>
-
+        <h2 class="text-center text-white mb-4">What We Offer</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card h-100" onclick="location.href='dashboard.html'">
+                    <h3>📚 DSA Tracker</h3>
+                    <p>Track your DSA progress topic by topic.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card h-100" onclick="location.href='resume.html'">
+                    <h3>📄 Resume Analyzer</h3>
+                    <p>Get AI-powered feedback on your resume.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card h-100" onclick="location.href='mockInterview.html'">
+                    <h3>🎤 Mock Interview</h3>
+                    <p>Practice technical and HR interviews with AI.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card h-100" onclick="location.href='applications.html'">
+                    <h3>💼 Application Tracker</h3>
+                    <p>Track all your job applications in one place.</p>
+                </div>
             </div>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="feature-card h-100"
-                 onclick="location.href='resume.html'">
-
-                <h3>📄 Resume Analyzer</h3>
-                <p>Analyze your resume</p>
-
+    </section>
+ 
+    <!-- Roadmap Section -->
+    <section class="container roadmap">
+        <h2 class="text-center text-white mb-4">Your Placement Journey</h2>
+        <div class="row g-4">
+            <div class="col-md col-sm-6">
+                <div class="roadmap-step h-100">
+                    <h3>1️⃣ Learn DSA</h3>
+                    <p>Master Arrays, Strings, Linked Lists, Trees.</p>
+                </div>
+            </div>
+            <div class="col-md col-sm-6">
+                <div class="roadmap-step h-100">
+                    <h3>2️⃣ Build Projects</h3>
+                    <p>Create real-world web development projects.</p>
+                </div>
+            </div>
+            <div class="col-md col-sm-6">
+                <div class="roadmap-step h-100">
+                    <h3>3️⃣ Improve Resume</h3>
+                    <p>Optimize your resume for recruiters.</p>
+                </div>
+            </div>
+            <div class="col-md col-sm-6">
+                <div class="roadmap-step h-100">
+                    <h3>4️⃣ Mock Interviews</h3>
+                    <p>Practice technical and HR interviews.</p>
+                </div>
+            </div>
+            <div class="col-md col-sm-6">
+                <div class="roadmap-step h-100">
+                    <h3>5️⃣ Get Placed</h3>
+                    <p>Crack your dream company.</p>
+                </div>
             </div>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="feature-card h-100"
-                 onclick="location.href='mockInterview.html'">
-
-                <h3>🎤 Mock Interview</h3>
-                <p>Practice interviews</p>
-
+    </section>
+ 
+    <!-- FAQ Section -->
+    <section class="container mt-5 mb-5">
+        <h2 class="text-center text-white mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                        How many DSA questions should I solve?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">150-200 quality questions are enough.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq2">
+                        When should I start applying?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                    <div class="accordion-body">After building projects and strong DSA fundamentals.</div>
+                </div>
             </div>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="feature-card h-100"
-                 onclick="location.href='applications.html'">
-
-                <h3>💼 Application Tracker</h3>
-                <p>Track your applications</p>
-
-            </div>
+    </section>
+ 
+    <!-- Contact Section -->
+    <section class="container text-center mt-5">
+        <div class="glass-card p-4">
+            <h2>Contact Us</h2>
+            <p>Email: placementprep@gmail.com</p>
+            <p>LinkedIn: PlacementPrep AI</p>
         </div>
-        <div class="feature-card" onclick="location.href='resume.html'"></div>
-    </div>
-
-</section>
-<section class="faq">
-
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq-item">
-    <h3>How many DSA questions should I solve?</h3>
-    <p>150-200 quality questions are enough.</p>
-</div>
-
-<div class="faq-item">
-    <h3>When should I start applying?</h3>
-    <p>After building projects and strong DSA fundamentals.</p>
-</div>
-
-</section>
-<section class="contact">
-
-<h2>Contact Us</h2>
-
-<p>Email: placementprep@gmail.com</p>
-
-<p>LinkedIn: PlacementPrep AI</p>
-
-</section>
-<footer class="text-center text-white mt-5 mb-3">
-
-    <h3>PlacementPrep AI</h3>
-
-    <p>Helping students prepare for placements.</p>
-
-    <p>
-        © 2026 PlacementPrep AI |
-        Built using HTML CSS JS
-    </p>
-
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="container text-center text-white py-5">
+        <h3>PlacementPrep AI</h3>
+        <p>Helping students prepare for placements.</p>
+        <p>© 2026 PlacementPrep AI | Built using HTML CSS JS</p>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

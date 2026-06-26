@@ -12,11 +12,11 @@ body {
 }
  
 /* =========================
-   LOGIN CARD
+   REGISTER CARD
 ========================= */
-.login-container {
+.register-container {
     width: 90%;
-    max-width: 420px;
+    max-width: 460px;
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -27,7 +27,7 @@ body {
     animation: fadeUp 0.7s ease forwards;
 }
  
-.login-container h2 {
+.register-container h2 {
     font-size: 2rem;
     font-weight: 700;
     color: white;
@@ -35,7 +35,7 @@ body {
     margin-bottom: 6px;
 }
  
-.login-sub {
+.register-sub {
     color: rgba(255,255,255,0.7);
     font-size: 0.95rem;
     margin-bottom: 24px;
@@ -74,13 +74,13 @@ body {
 /* =========================
    LINK
 ========================= */
-.login-container a {
+.register-container a {
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
  
-.login-container a:hover {
+.register-container a:hover {
     text-decoration: underline;
 }
 /* Add this to your existing register.css */

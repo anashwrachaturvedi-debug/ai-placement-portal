@@ -1,0 +1,200 @@
+/* =========================
+   PAGE HEADER
+========================= */
+.page-header {
+    animation: slideUp 0.8s ease forwards;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+}
+
+/* =========================
+   ACTIVE LINK
+========================= */
+.active-link {
+    color: #0d6efd !important;
+    font-weight: 700 !important;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+.stat-card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.stat-card p {
+    color: rgba(255,255,255,0.65);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.stat-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.app-input {
+    width: 100%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 12px;
+    color: white;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    font-family: inherit;
+}
+
+.app-input::placeholder {
+    color: rgba(255,255,255,0.30);
+}
+
+.app-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.25);
+    background: rgba(255,255,255,0.12);
+}
+
+.app-input option {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+.filter-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 50px;
+    color: white;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: rgba(13,110,253,0.20);
+    border-color: rgba(13,110,253,0.5);
+}
+
+.filter-btn.active {
+    background: rgba(13,110,253,0.30);
+    border-color: #0d6efd;
+    color: #6ea8fe;
+}
+
+/* =========================
+   APPLICATION CARD
+========================= */
+.app-card {
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 20px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 14px;
+    transition: 0.3s;
+    animation: slideUp 0.4s ease forwards;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.app-card .company-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.app-card .role-name {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 2px;
+}
+
+.app-card .app-date {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.40);
+    margin-top: 4px;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+.status-badge {
+    padding: 5px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.badge-Applied   { background: rgba(13,110,253,0.25); color: #6ea8fe; border: 1px solid rgba(13,110,253,0.4); }
+.badge-Interview { background: rgba(255,193,7,0.20);  color: #ffc107; border: 1px solid rgba(255,193,7,0.4); }
+.badge-Offer     { background: rgba(25,135,84,0.25);  color: #75b798; border: 1px solid rgba(25,135,84,0.4); }
+.badge-Rejected  { background: rgba(220,53,69,0.20);  color: #ea868f; border: 1px solid rgba(220,53,69,0.4); }
+
+/* =========================
+   DELETE BUTTON
+========================= */
+.delete-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.30);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.delete-btn:hover {
+    color: #ea868f;
+    background: rgba(220,53,69,0.15);
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    body{
+    background-attachment : scroll;
+    }
+    .stat-card h2 {
+        font-size: 1.8rem;
+    }
+}

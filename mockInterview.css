@@ -18,11 +18,54 @@
 }
 
 /* =========================
+   INTERVIEW TYPE CARDS
+========================= */
+.interview-type-card {
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    height: 100%;
+}
+
+.interview-type-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(13,110,253,0.6);
+    background: rgba(13,110,253,0.12);
+}
+
+.interview-type-card.selected {
+    border-color: #0d6efd;
+    background: rgba(13,110,253,0.20);
+    box-shadow: 0 0 20px rgba(13,110,253,0.30);
+}
+
+.interview-type-card .type-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.interview-type-card h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.interview-type-card p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.60);
+    margin: 0;
+}
+
+/* =========================
    GLASS TEXTAREA
 ========================= */
 .glass-textarea {
     width: 100%;
-    min-height: 260px;
+    min-height: 160px;
     background: rgba(255,255,255,0.07);
     border: 1px solid rgba(255,255,255,0.20);
     border-radius: 16px;
@@ -46,33 +89,23 @@
 }
 
 /* =========================
-   FEEDBACK LIST
+   SCORE BADGE
 ========================= */
-.feedback-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.feedback-list li {
-    color: rgba(255,255,255,0.85);
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.feedback-list li:last-child {
-    border-bottom: none;
+.score-badge {
+    background: rgba(13,110,253,0.25);
+    border: 1px solid rgba(13,110,253,0.5);
+    color: #6ea8fe;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 /* =========================
-   AI SUGGESTION TEXT
+   PROGRESS
 ========================= */
-.suggestion-text {
-    line-height: 1.8;
-    font-size: 0.97rem;
-    white-space: pre-line;
+.progress {
+    background: rgba(255,255,255,0.12);
 }
 
 /* =========================
@@ -95,7 +128,6 @@
 .stat-card h2 {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #ffffff;
 }
 
 .stat-card p {
@@ -115,8 +147,7 @@
     .page-header h1 {
         font-size: 2rem;
     }
-
-    .glass-textarea {
-        min-height: 200px;
+    body{
+        background-attachment: scroll;
     }
 }
