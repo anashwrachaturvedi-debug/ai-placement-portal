@@ -3,11 +3,13 @@
 ========================= */
 body {
     background:
-        linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)),
+        linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
         url("FAANG.webp");
-    background-size: cover;
-    background-position: center;
+    background-size: contain;          /* ← shows full image */
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: scroll;
+    background-color: #0a0a1a;         /* ← dark fill for empty areas */
     min-height: 100vh;
 }
  
